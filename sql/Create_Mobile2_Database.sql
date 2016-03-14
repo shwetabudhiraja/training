@@ -1,4 +1,4 @@
-Create Database mobile2;
+create database mobile2;
 Create Table mobile2.mobile
 (
 id int AUTO_INCREMENT PRIMARY KEY,
@@ -9,11 +9,10 @@ created_on timestamp DEFAULT CURRENT_TIMESTAMP
 
 Create table mobile2.features
 (
-id int PRIMARY KEY AUTO_INCREMENT ,
+id INT AUTO_INCREMENT PRIMARY KEY ,
 feature_name varchar(25),
 value varchar(25),
-created_on timestamp DEFAULT CURRENT_TIMESTAMP
-mobile_id INT,
-FOREIGN KEY (mobile_id)
+created_on timestamp DEFAULT CURRENT_TIMESTAMP,
+FOREIGN KEY (id)
    REFERENCES mobile2.mobile(id)
 );
