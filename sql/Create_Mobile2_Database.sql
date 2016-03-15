@@ -11,7 +11,7 @@ Create table mobile2.features
 (
 id INT AUTO_INCREMENT PRIMARY KEY ,
 feature_name varchar(25),
-value varchar(25),
+value boolean,
 created_on timestamp DEFAULT CURRENT_TIMESTAMP,
 FOREIGN KEY (id)
    REFERENCES mobile2.mobile(id)
