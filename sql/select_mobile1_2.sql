@@ -1,0 +1,1 @@
+ select name as Name hascamera + hasdualsim + hasfrontcamera + hasearplugs As no_of_features from mobile1.mobile ORDER BY no_of_features DESC LIMIT 1;
